@@ -3,19 +3,22 @@ import { yupResolver } from "@hookform/resolvers/yup"
 import { toast } from 'react-toastify';
 import * as yup from "yup"
 import { api } from '../../services/api';
+import { useNavigate } from 'react-router-dom';
 
 import Logo from '../../assets/Login.svg';
 import { Button } from '../../components/Button';
 import {
      Container,
+     Form,
+     InputContainer,
      LeftContainer,
      RightContainer,
      Title,
-     Form,
-     InputContainer,
+     Link,
 } from './styles';
 
 export function Register() {
+     const navigate = useNavigate();
 
      const schema = yup
           .object({
@@ -47,6 +50,9 @@ export function Register() {
                },
                );
                if (status === 200 || status === 201) {
+                    setTimeout(() => {
+                         navigate('/login');
+                    }, 2000);
                     toast.success('😀 Conta criada com sucesso!');
                } else if (status === 409) {
                     toast.error('😐 E-mail já existente!');
@@ -100,7 +106,7 @@ export function Register() {
                     </Form>
 
                     <p>
-                         Já possui conta? <a href="#">Clique aqui</a>
+                         Já possui conta? <Link to="/login">Clique aqui</Link>
                     </p>
                </RightContainer>
           </Container>

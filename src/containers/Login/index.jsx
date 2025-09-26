@@ -1,11 +1,11 @@
-import { useForm } from "react-hook-form"
-import { yupResolver } from "@hookform/resolvers/yup"
-import { toast } from 'react-toastify';
-import * as yup from "yup"
-import { api } from '../../services/api';
-
-import Logo from '../../assets/Login.svg';
-import { Button } from '../../components/Button';
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import * as yup from "yup";
+import { api } from "../../services/api";
+import Logo from "../../assets/Login.svg";
+import { Button } from "../../components/Button";
 import {
      Container,
      LeftContainer,
@@ -13,13 +13,22 @@ import {
      Title,
      Form,
      InputContainer,
-} from './styles';
+     Link,
+} from "./styles";
 
 export function Login() {
+     const navigate = useNavigate();
+
      const schema = yup
           .object({
-               email: yup.string().email('Digite um e-mail válido').required('O e-mail é obrigatório'),
-               password: yup.string().min(6, 'A senha deve ter pelo menos 6 caracteres').required('A senha é obrigatória'),
+               email: yup
+                    .string()
+                    .email("Digite um e-mail válido")
+                    .required("O e-mail é obrigatório"),
+               password: yup
+                    .string()
+                    .min(6, "A senha deve ter pelo menos 6 caracteres")
+                    .required("A senha é obrigatória"),
           })
           .required();
 
@@ -31,22 +40,47 @@ export function Login() {
           resolver: yupResolver(schema),
      });
 
-     console.log(errors);
+     console.log("Erros de validação:", errors);
 
      const onSubmit = async (data) => {
-          const response = await toast.promise(
-               api.post('/sessions', {
-                    email: data.email,
-                    password: data.password,
-               }),
-               {
-                    pending: '😒 Verificando seus dados...',
-                    success: '😀 Login realizado com sucesso!',
-                    error: '😭 Erro ao realizar o login, verifique suas credenciais.',
-               }
-          );
+          console.log("Dados do formulário enviados:", data);
 
-          console.log(response);
+          try {
+               const response = await toast.promise(
+                    api.post("/sessions", {
+                         email: data.email,
+                         password: data.password,
+                    }),
+                    {
+                         pending: "😒 Verificando seus dados...",
+                         success: {
+                              render({ data }) {
+                                   const userName = data?.data?.user?.name || "usuário";
+                                   setTimeout(() => {
+                                        navigate("/");
+                                   }, 2000);
+                                   return `😀 ${userName}, seja bem-vindo(a) ao Dev Burguer!`;
+                              },
+                         },
+                         error: "😭 Erro ao realizar o login, verifique suas credenciais.",
+                    }
+               );
+
+               console.log("Resposta da API:", response.data);
+          } catch (error) {
+               console.error("Erro na requisição de login:", error);
+
+               if (error.response) {
+                    console.error("Erro do servidor:", error.response.data);
+                    toast.error(error.response.data.message || "Erro no login.");
+               } else if (error.request) {
+                    console.error("Sem resposta do servidor:", error.request);
+                    toast.error("Servidor não respondeu. Tente novamente mais tarde.");
+               } else {
+                    console.error("Erro inesperado:", error.message);
+                    toast.error("Erro inesperado ao realizar o login.");
+               }
+          }
      };
 
      return (
@@ -57,7 +91,7 @@ export function Login() {
 
                <RightContainer>
                     <Title>
-                         Olá, seja bem vindo ao <span>Dev Burguer!</span>
+                         Olá, seja bem-vindo ao <span>Dev Burguer!</span>
                          <br />
                          Acesse com seu <span>Login e senha.</span>
                     </Title>
@@ -65,13 +99,13 @@ export function Login() {
                     <Form onSubmit={handleSubmit(onSubmit)}>
                          <InputContainer>
                               <label>Email</label>
-                              <input type="email" {...register('email')} />
+                              <input type="email" {...register("email")} />
                               <p>{errors?.email?.message}</p>
                          </InputContainer>
 
                          <InputContainer>
                               <label>Senha</label>
-                              <input type="password" {...register('password')} />
+                              <input type="password" {...register("password")} />
                               <p>{errors?.password?.message}</p>
                          </InputContainer>
 
@@ -79,9 +113,10 @@ export function Login() {
                     </Form>
 
                     <p>
-                         Não possui conta? <a href="#">Clique aqui</a>
+                         Não possui conta? <Link to="/cadastro">Clique aqui</Link>
                     </p>
                </RightContainer>
           </Container>
      );
 }
+
