@@ -27,17 +27,19 @@ export function Register() {
                password: yup.string().min(6, 'A senha deve ter pelo menos 6 caracteres').required('A senha é obrigatória'),
                confirmPassword: yup.string().oneOf([yup.ref('password')], 'As senhas devem ser iguais')
                     .required('Confirmar a senha é obrigatório'),
-
           })
           .required();
 
+     // aqui gera meu tokens de validação no meu local storage
      const {
           register,
           handleSubmit,
           formState: { errors },
+          clearErrors
      } = useForm({
           resolver: yupResolver(schema),
-     })
+
+     });
      const onSubmit = async (data) => {
           try {
                const { status } = await api.post(
@@ -82,23 +84,31 @@ export function Register() {
                     <Form onSubmit={handleSubmit(onSubmit)}>
                          <InputContainer>
                               <label>Nome</label>
-                              <input type="text" {...register("name")} />
+                              <input type="text" {...register("name")}
+                                   onChange={() => clearErrors("name")}
+                              />
                               <p>{errors?.name?.message}</p>
                          </InputContainer>
                          <InputContainer>
                               <label>Email</label>
-                              <input type="email" {...register("email")} />
+                              <input type="email" {...register("email")}
+                                   onChange={() => clearErrors("email")}
+                              />
                               <p>{errors?.email?.message}</p>
                          </InputContainer>
 
                          <InputContainer>
                               <label>Senha</label>
-                              <input type="password" {...register("password")} />
+                              <input type="password" {...register("password")}
+                                   onChange={() => clearErrors("password")}
+                              />
                               <p>{errors?.password?.message}</p>
                          </InputContainer>
                          <InputContainer>
                               <label>Confirmar Senha</label>
-                              <input type="password" {...register("confirmPassword")} />
+                              <input type="password" {...register("confirmPassword")}
+                                   onChange={() => clearErrors("confirmPassword")}
+                              />
                               <p>{errors?.confirmPassword?.message}</p>
                          </InputContainer>
 

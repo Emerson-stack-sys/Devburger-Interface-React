@@ -32,6 +32,9 @@ export const RightContainer = styled.div`
   background: url(${Background});
   background-size: cover;
   background-position: center;
+  background-color: black;
+  
+  
 
   p {
     color: #fff;

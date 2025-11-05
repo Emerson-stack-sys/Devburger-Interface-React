@@ -36,15 +36,13 @@ export function Login() {
           register,
           handleSubmit,
           formState: { errors },
+          watch
      } = useForm({
           resolver: yupResolver(schema),
+          mode: "onChange", // valida a cada alteração
      });
 
-     console.log("Erros de validação:", errors);
-
      const onSubmit = async (data) => {
-          console.log("Dados do formulário enviados:", data);
-
           try {
                const response = await toast.promise(
                     api.post("/sessions", {
@@ -66,7 +64,8 @@ export function Login() {
                     }
                );
 
-               console.log("Resposta da API:", response.data);
+               localStorage.setItem("token", response.data.token);
+
           } catch (error) {
                console.error("Erro na requisição de login:", error);
 
