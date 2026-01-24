@@ -1,3 +1,4 @@
+import { BackButton } from "../../components/BackButton.jsx";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import {
@@ -10,6 +11,7 @@ import {
 import { api } from "../../services/api";
 import { formatPrice } from "../../utils/formatPrice";
 import { CardProduct } from "../../components/CardProduct";
+
 
 export function Menu() {
      const [categories, setCategories] = useState([]);
@@ -95,6 +97,10 @@ export function Menu() {
 
      return (
           <Container>
+               <div style={{ padding: "16px" }}>
+                    <BackButton />
+
+               </div>
                <Banner>
                     <h1>
                          O MELHOR <br />

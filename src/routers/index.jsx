@@ -1,13 +1,31 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Login } from "../containers/Login";
-import { Register } from "../containers/Register";
-import { Home } from "../containers/Home";
-import { Menu } from "../containers/Menu";
+
+import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
+import {Cart, Home, Login, Menu, Register} from '../containers';
 
 export const router = createBrowserRouter([
+
      {
           path: '/',
-          element: <Home />,
+          element: (
+                <div
+        style={{
+          minHeight: '100vh',
+          display: 'flex',
+          flexDirection: 'column',
+        }}
+      >
+        <Header />
+
+        <main style={{ flex: 1 }}>
+          <Home />
+        </main>
+
+        <Footer />
+      </div>
+
+          ),
      },
      {
           path: '/login',
@@ -20,7 +38,23 @@ export const router = createBrowserRouter([
 
      {
           path: '/cardapio',
-          element: <Menu />,
+          element: (
+               <>
+                    <Header />
+                    <Menu />
+               </>
+
+          ),
+     },
+     {
+     path: '/carrinho',
+          element: (
+               <>
+                    <Header />
+                    <Cart />
+               </>
+
+          ),
      },
 
 ]);

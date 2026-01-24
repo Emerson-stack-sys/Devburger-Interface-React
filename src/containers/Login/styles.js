@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Link as ReactLink } from "react-router-dom";
+import styled from 'styled-components';
+import { Link as ReactLink } from 'react-router-dom';
 import BackgroundLogin from '../../assets/background-login.svg';
 import Background from '../../assets/background.png';
 
@@ -39,7 +39,7 @@ export const RightContainer = styled.div`
     margin-top: 10px;
 
     a {
-      color: #9758A6;
+      color: #9758a6;
       text-decoration: none;
       font-weight: 600;
 
@@ -51,13 +51,13 @@ export const RightContainer = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-family: "Road Rage", sans-serif;
+  font-family: 'Road Rage', sans-serif;
   font-size: 40px;
   color: #fff;
 
   span {
-    color: #9758A6;
-     font-family: "Road Rage", sans-serif;
+    color: #9758a6;
+    font-family: 'Road Rage', sans-serif;
   }
 `;
 
@@ -102,7 +102,7 @@ export const InputContainer = styled.div`
   }
 `;
 
-  export const Link = styled(ReactLink)`
+export const Link = styled(ReactLink)`
   text-decoration: none;
   color: #fff;
-  `;
+`;

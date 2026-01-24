@@ -10,9 +10,12 @@ export const api = axios.create({
 
 // Adiciona o token em todas as requisições, se existir
 api.interceptors.request.use(config => {
-  const token = localStorage.getItem('token');
-  if (token) {
-    config.headers.Authorization = `Bearer ${token}`;
+  const userData = localStorage.getItem('devburge:userData');
+  if (userData) {
+    const token = JSON.parse(userData).token;
+    if (token) {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
   }
   return config;
 });
