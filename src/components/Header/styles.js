@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
-  background-color: #333;
+  background-color: #1f1f1f;
   width: 100%;
   height: 80px;
   padding: 0 56px;
@@ -37,8 +37,9 @@ export const Navigation = styled.nav`
 `;
 
 export const HeaderLink = styled(Link)`
-  color: ${(props) => (props.$isActive ? '#9758a6' : '#fff')};
-  border-bottom: ${(props) => (props.$isActive ? '2px solid #9758a6' : 'none')};
+  color: ${(props) => (props.active ? '#9758a6' : '#fff')};
+  border-bottom: 2px solid
+    ${(props) => (props.active ? '#9758a6' : 'transparent')};
   padding-bottom: 4px;
   font-size: 16px;
   text-decoration: none;
