@@ -53,34 +53,44 @@ Mongoose
 JWT
 Bcrypt
 <br>
-<br>
 <h2>
-
   <div>
    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/visual_studio_code.png"Vscode" height="40"/>
    <img src="src/assets/Node.jpg" alt="Node" height="50"/>
-
-    
+   <img src="src/assets/Docker.jpg" alt="Docker" height="50"/>
+   <img src="src/assets/Httpie.jpg" alt="Httpie" height="50"/>
+   <img src="src/assets/Ubuntu.jpg" alt="Ubuntu" height="50"/>
+   <img src="src/assets/Git.jpg" alt="Git" height="50"/>
+   <img src="src/assets/GitHub.jpg" alt="GitHub" height="50"/>
+   <img src="src/assets/Express.jpg" alt="Express" height="50"/>
   </div>
+  <br>
+  <br>
 🚀 Demonstração do Sistema em fotos e Videos para
-vizualizar e entender melhor veja os videos logo a baixo!
+vizualizar e entender melhor veja os videos logo a baixo por capitulo e Tópicos!
   
   <br>
-  🎥 Vídeo de Demonstração
+  <br>
+  <br>
 
-▶️ Assista ao vídeo no YouTube
+🖼️ Telas do Projeto
+Página Inicial
+
+A página inicial apresenta os produtos disponíveis da hamburgueria com uma interface moderna e intuitiva.
+<br>
+🎥 Fotos e Vídeos de Demonstração
  </h2>
 
-
 <!-- Telas no Notebook -->
-<br>
 <br>
 <div>
   <div class="section-title">💻 Tela do Projeto Rodando no Notebook</div>
   <br>
   <div class="image-group">
-    <img src="src/assets/notebook1.png" alt="Notebook" width="400" />
-    <img src="src/assets/notebook2.png" alt="Notebook" width="400" />
+    <img src="src/assets/TelaHome.png" alt="TelaHome" width="400" />
+    ## 🚀 Demonstração
+
+![DevBurger](./src/assets/Mostrando os Cardápios.gif)
   </div>
 </div>
 <br>
