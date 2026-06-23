@@ -49,39 +49,34 @@ export function Login() {
 
   const onSubmit = async (data) => {
     try {
-      const { data: userData } = await toast.promise(
+      const response = await toast.promise(
         api.post('/sessions', {
           email: data.email,
           password: data.password,
         }),
+
         {
           pending: '😒 Verificando seus dados...',
-          success: {
-            render({ data }) {
-              const userName = data?.data?.user?.name || 'usuário';
-              setTimeout(() => {
-                navigate('/admin/pedidos');
-              }, 2000);
-              return `😀 ${userName}, seja bem-vindo(a) ao Dev Burguer!`;
-            },
-          },
-          error: '😭 Erro ao realizar o login, verifique suas credenciais.',
+          success: 'Login realizado com sucesso!',
+          error: '😭 Erro ao realizar o login',
         },
       );
-      putUserData(userData);
-    } catch (error) {
-      console.error('Erro na requisição de login:', error);
 
-      if (error.response) {
-        console.error('Erro do servidor:', error.response.data);
-        toast.error(error.response.data.message || 'Erro no login.');
-      } else if (error.request) {
-        console.error('Sem resposta do servidor:', error.request);
-        toast.error('Servidor não respondeu. Tente novamente mais tarde.');
-      } else {
-        console.error('Erro inesperado:', error.message);
-        toast.error('Erro inesperado ao realizar o login.');
-      }
+      const user = response.data;
+      console.log('USER:', user);
+      localStorage.setItem('devburger:token', user.token);
+
+      putUserData(user);
+
+      setTimeout(() => {
+        if (user.admin) {
+          navigate('/admin/pedidos');
+        } else {
+          navigate('/');
+        }
+      }, 1000);
+    } catch (error) {
+      console.error('Login error:', error);
     }
   };
 
