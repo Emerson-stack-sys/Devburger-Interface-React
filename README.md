@@ -32,6 +32,12 @@ Stripe
    <img src="src/assets/cors.jpeg" alt="Cors" height="50"/>
    <img src="src/assets/api.jpeg" alt="APIs" height="50"/>
   <img src="src/assets/useState.jpeg" alt="UseState" height="50"/>
+  <img src="src/assets/mongoDB.jpeg" alt="MongoDB" height="50"/>
+  <img src="src/assets/prisma.jpeg" alt="Prisma" height="50"/>
+  <img src="src/assets/stripeScaled.jpeg" alt="StripeScaled" height="50"/>
+  <img src="src/assets/studioPrisma.jpeg" alt="StudioPrisma" height="50"/>
+  
+  
 </div>
 
 ## 📦 Instalação
