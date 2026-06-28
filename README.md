@@ -85,10 +85,31 @@ A página inicial apresenta os produtos disponíveis da hamburgueria com uma int
 <br>
 <div>
   <div class="section-title">💻 Tela do Projeto Rodando no Notebook</div>
+  ## 🚀 Demonstração
+  , ,
+  <br>
   <br>
   <div class="image-group">
+    TELA DE HOME
+    <BR>
+    <BR>
+    <img src="src/assets/CategoriasCatalogos.png" alt="TelaCategorias" width="400" />
+    <BR>
+     <BR>
+    <BR>
+    <BR>
+    <BR>
+    TELA DE CARDAPIO
+    <BR>
+    <BR>
     <img src="src/assets/TelaHome.png" alt="TelaHome" width="400" />
-    ## 🚀 Demonstração
+  </BR>
+    TELA DE CARRINHO
+      <BR>
+  </BR>
+    <img src="src/assets/Checkoutprodutos.png" alt="TelaCheckout" width="400" />
+   
+    
 
 ![DevBurger](./src/assets/Mostrando os Cardápios.gif)
   </div>
