@@ -75,11 +75,13 @@ vizualizar e entender melhor veja os videos logo a baixo por capitulo e Tópicos
 
 🖼️ Telas do Projeto
 Página Inicial
-
+ <div>
+   <h2>
 A 1º página inicial apresenta os produtos disponíveis da hamburgueria com uma interface moderna e intuitiva, demostrando Tela de Home, Cardapio e Carrinho.
 <br>
 🎥 Fotos e Vídeos de Demonstração
  </h2>
+ </div> 
 
 <!-- Telas no Notebook -->
 <br>
@@ -113,16 +115,17 @@ A 1º página inicial apresenta os produtos disponíveis da hamburgueria com uma
 <br>
 <br>
 <br>
+<div>
+  <h2>
     A 2º página inicial apresenta a Tela de Cadastro, Tela de Login e Tela de Carrinho produtos da hamburgueria com uma interface moderna e intuitiva, demostrando. 
 <br>
 🎥 Fotos e Vídeos de Demonstração
  </h2>
 
+ </div>
 
-   <!-- Telas no Notebook -->
-<br>
-<br>
-<br>
+
+   
 <br>
 <div>
     ## 🚀 Demonstração
@@ -148,6 +151,54 @@ A 1º página inicial apresenta os produtos disponíveis da hamburgueria com uma
       <BR>
   </BR>
     <img src="src/assets/Checkoutprodutos.png" alt="TelaCheckout" width="400" />
+
+
+
+    <br>
+<br>
+<br>
+<div>
+  <h2>
+    A 3º página inicial apresenta a Tela de Cardapio e Tela de Carrinho e Tela de Pagamento produtos da hamburgueria com uma interface moderna e intuitiva, demostrando. 
+<br>
+🎥 Fotos e Vídeos de Demonstração
+ </h2>
+
+ </div>
+
+
+   
+<br>
+<div>
+    ## 🚀 Demonstração
+  <div class="section-title">💻 Tela do Projeto Rodando no Notebook</div>
+
+  <br>
+  <br>
+  <div class="image-group">
+    TELA DE Carrinho com Itens
+    <BR>
+    <BR>
+     <img src="src/assets/Checkoutprodutos.png" alt="Tela de Pagamento" width="400" />
+    <BR>
+     <BR>
+    <BR>
+    TELA DE Pagamento Sendo feito com Cartão
+    <BR>
+    <BR>
+     <img src="src/assets/PagamentoCartão.png" alt="Pagamento no Cartão" width="400" />
+    <BR>
+    <BR>
+      TELA DE Pagamento Efeituado com Sucesso
+    <BR>
+    <BR>
+    <img src="src/assets/PagamentoEfietuado.png" alt="PagamentoConcluido" width="400" />
+  </BR>
+    <BR>
+    TELA DE CARRINHO
+      <BR>
+  </BR>
+   
     
 
 ![DevBurger](./src/assets/Mostrando os Cardápios.gif)
