@@ -76,7 +76,7 @@ vizualizar e entender melhor veja os videos logo a baixo por capitulo e Tópicos
 🖼️ Telas do Projeto
 Página Inicial
 
-A página inicial apresenta os produtos disponíveis da hamburgueria com uma interface moderna e intuitiva.
+A 1º página inicial apresenta os produtos disponíveis da hamburgueria com uma interface moderna e intuitiva, demostrando Tela de Home, Cardapio e Carrinho.
 <br>
 🎥 Fotos e Vídeos de Demonstração
  </h2>
@@ -84,9 +84,9 @@ A página inicial apresenta os produtos disponíveis da hamburgueria com uma int
 <!-- Telas no Notebook -->
 <br>
 <div>
+    ## 🚀 Demonstração
   <div class="section-title">💻 Tela do Projeto Rodando no Notebook</div>
-  ## 🚀 Demonstração
-  , ,
+
   <br>
   <br>
   <div class="image-group">
@@ -97,18 +97,57 @@ A página inicial apresenta os produtos disponíveis da hamburgueria com uma int
     <BR>
      <BR>
     <BR>
-    <BR>
-    <BR>
     TELA DE CARDAPIO
     <BR>
     <BR>
     <img src="src/assets/TelaHome.png" alt="TelaHome" width="400" />
   </BR>
+    <BR>
+    <BR>
     TELA DE CARRINHO
       <BR>
   </BR>
     <img src="src/assets/Checkoutprodutos.png" alt="TelaCheckout" width="400" />
-   
+
+
+<br>
+<br>
+<br>
+    A 2º página inicial apresenta a Tela de Cadastro, Tela de Login e Tela de Carrinho produtos da hamburgueria com uma interface moderna e intuitiva, demostrando. 
+<br>
+🎥 Fotos e Vídeos de Demonstração
+ </h2>
+
+
+   <!-- Telas no Notebook -->
+<br>
+<br>
+<br>
+<br>
+<div>
+    ## 🚀 Demonstração
+  <div class="section-title">💻 Tela do Projeto Rodando no Notebook</div>
+
+  <br>
+  <br>
+  <div class="image-group">
+    TELA DE CADASTRO
+    <BR>
+    <BR>
+    <img src="src/assets/TelaCadastro.png" alt="TelaCadastro" width="400" />
+    <BR>
+     <BR>
+    <BR>
+    TELA DE LOGIN
+    <BR>
+    <BR>
+    <img src="src/assets/TelaLogin.png" alt="TelaLogin" width="400" />
+  </BR>
+    <BR>
+    TELA DE CARRINHO
+      <BR>
+  </BR>
+    <img src="src/assets/Checkoutprodutos.png" alt="TelaCheckout" width="400" />
     
 
 ![DevBurger](./src/assets/Mostrando os Cardápios.gif)
