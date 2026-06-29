@@ -1508,7 +1508,19 @@ A tela de edição permite atualizar todas as informações de um produto já ex
 </p>
 Durante o cadastro, o sistema realiza validações para garantir a integridade dos dados antes de salvar as informações no banco de dados.
 
-## 🎬 Vídeo Completo
+backend https://youtu.be/e6gicED-FpY
 
-[![Painel Administrativo](src/assets/thumb-admin.png)](https://youtu.be/R6rERT-myJk)
+# 🎬 Galeria de Vídeos  
+
+| Funcionalidade | Vídeo |
+|---------------|-------|
+| 🏠 Home | [▶ Assistir]( ) |
+| 🍔 Catálogo | [▶ Assistir](https://youtu.be/paMLza9ONVk) |
+| 👤 Cadastro | [▶ Assistir]( ) |
+| 🔐 Login | [▶ Assistir]( ) |
+| 🛒 Carrinho | [▶ Assistir]( ) |
+| 💳 Pagamento | [▶ Assistir](https://youtu.be/j-EKSHpU0sY) |
+| ⚙ Painel Admin | [▶ Assistir]( ) |
+| 👤 Admin Adicionando Produto | [▶ Assistir](https://youtu.be/R6rERT-myJk) |
+| 👤 Admin Editando Produto | [▶ Assistir](https://youtu.be/rBL6JWWf7IE) |
 
