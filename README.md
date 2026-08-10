@@ -1516,7 +1516,7 @@ backend https://youtu.be/e6gicED-FpY
 |---------------|-------|
 | 🏠 Home | [▶ Assistir](https://youtu.be/o9JDQNelnW0) |
 | 🍔 Catálogo | [▶ Assistir](https://youtu.be/paMLza9ONVk) |
-| 👤 Cadastro | 🔐 Login| [▶ Assistir](https://youtu.be/KEt2SCjXdmk) |
+| 👤 Cadastro/Login | [▶ Assistir](https://youtu.be/KEt2SCjXdmk) |
 | 🛒 Carrinho | [▶ Assistir](https://youtu.be/bmkcgwvs4UU) |
 | 💳 Pagamento | [▶ Assistir](https://youtu.be/j-EKSHpU0sY) |
 | ⚙ Painel Admin | [▶ Assistir](https://youtu.be/gRzc_R7bq3k) |
