@@ -1514,13 +1514,12 @@ backend https://youtu.be/e6gicED-FpY
 
 | Funcionalidade | Vídeo |
 |---------------|-------|
-| 🏠 Home | [▶ Assistir]( ) |
+| 🏠 Home | [▶ Assistir](https://youtu.be/o9JDQNelnW0) |
 | 🍔 Catálogo | [▶ Assistir](https://youtu.be/paMLza9ONVk) |
-| 👤 Cadastro | [▶ Assistir]( ) |
-| 🔐 Login | [▶ Assistir]( ) |
-| 🛒 Carrinho | [▶ Assistir]( ) |
+| 👤 Cadastro | 🔐 Login| [▶ Assistir](https://youtu.be/KEt2SCjXdmk) |
+| 🛒 Carrinho | [▶ Assistir](https://youtu.be/bmkcgwvs4UU) |
 | 💳 Pagamento | [▶ Assistir](https://youtu.be/j-EKSHpU0sY) |
-| ⚙ Painel Admin | [▶ Assistir]( ) |
+| ⚙ Painel Admin | [▶ Assistir](https://youtu.be/gRzc_R7bq3k) |
 | 👤 Admin Adicionando Produto | [▶ Assistir](https://youtu.be/R6rERT-myJk) |
 | 👤 Admin Editando Produto | [▶ Assistir](https://youtu.be/rBL6JWWf7IE) |
 
